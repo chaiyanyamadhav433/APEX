@@ -1,0 +1,140 @@
+prompt --application/pages/page_00001
+begin
+--   Manifest
+--     PAGE: 00001
+--   Manifest End
+wwv_flow_api.component_begin (
+ p_version_yyyy_mm_dd=>'2021.04.15'
+,p_release=>'21.1.4'
+,p_default_workspace_id=>1192163186590554
+,p_default_application_id=>193
+,p_default_id_offset=>0
+,p_default_owner=>'HOSPITAL'
+);
+wwv_flow_api.create_page(
+ p_id=>1
+,p_user_interface_id=>wwv_flow_api.id(184665981852762339)
+,p_name=>'Home'
+,p_alias=>'HOME'
+,p_step_title=>'Version Control APP - Testing'
+,p_autocomplete_on_off=>'OFF'
+,p_page_template_options=>'#DEFAULT#'
+,p_last_updated_by=>'MADHAV'
+,p_last_upd_yyyymmddhh24miss=>'20211018161117'
+);
+wwv_flow_api.create_report_region(
+ p_id=>wwv_flow_api.id(184676872354762389)
+,p_name=>'Version Control APP - Testing'
+,p_template=>wwv_flow_api.id(184566597843762210)
+,p_display_sequence=>10
+,p_icon_css_classes=>'app-icon'
+,p_region_template_options=>'#DEFAULT#'
+,p_component_template_options=>'#DEFAULT#:t-Report--altRowsDefault:t-Report--rowHighlight'
+,p_display_point=>'REGION_POSITION_01'
+,p_source_type=>'NATIVE_SQL_REPORT'
+,p_query_type=>'TABLE'
+,p_query_table=>'EMP'
+,p_include_rowid_column=>false
+,p_ajax_enabled=>'Y'
+,p_lazy_loading=>false
+,p_query_row_template=>wwv_flow_api.id(184606487196762252)
+,p_query_num_rows=>15
+,p_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_query_num_rows_type=>'NEXT_PREVIOUS_LINKS'
+,p_pagination_display_position=>'BOTTOM_RIGHT'
+,p_csv_output=>'N'
+,p_prn_output=>'N'
+,p_sort_null=>'L'
+,p_plug_query_strip_html=>'N'
+);
+wwv_flow_api.create_report_columns(
+ p_id=>wwv_flow_api.id(100868045904961043)
+,p_query_column_id=>1
+,p_column_alias=>'EMPNO'
+,p_column_display_sequence=>10
+,p_column_heading=>'Empno'
+,p_use_as_row_header=>'N'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+);
+wwv_flow_api.create_report_columns(
+ p_id=>wwv_flow_api.id(100868176687961044)
+,p_query_column_id=>2
+,p_column_alias=>'ENAME'
+,p_column_display_sequence=>20
+,p_column_heading=>'Ename'
+,p_use_as_row_header=>'N'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+);
+wwv_flow_api.create_report_columns(
+ p_id=>wwv_flow_api.id(100868263229961045)
+,p_query_column_id=>3
+,p_column_alias=>'JOB'
+,p_column_display_sequence=>30
+,p_column_heading=>'Job'
+,p_use_as_row_header=>'N'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+);
+wwv_flow_api.create_report_columns(
+ p_id=>wwv_flow_api.id(100868393895961046)
+,p_query_column_id=>4
+,p_column_alias=>'MGR'
+,p_column_display_sequence=>40
+,p_column_heading=>'Mgr'
+,p_use_as_row_header=>'N'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+);
+wwv_flow_api.create_report_columns(
+ p_id=>wwv_flow_api.id(100868451846961047)
+,p_query_column_id=>5
+,p_column_alias=>'HIREDATE'
+,p_column_display_sequence=>50
+,p_column_heading=>'Hiredate'
+,p_use_as_row_header=>'N'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+);
+wwv_flow_api.create_report_columns(
+ p_id=>wwv_flow_api.id(100868510422961048)
+,p_query_column_id=>6
+,p_column_alias=>'SAL'
+,p_column_display_sequence=>60
+,p_column_heading=>'Sal'
+,p_use_as_row_header=>'N'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+);
+wwv_flow_api.create_report_columns(
+ p_id=>wwv_flow_api.id(100868663083961049)
+,p_query_column_id=>7
+,p_column_alias=>'COMM'
+,p_column_display_sequence=>70
+,p_column_heading=>'Comm'
+,p_use_as_row_header=>'N'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+);
+wwv_flow_api.create_report_columns(
+ p_id=>wwv_flow_api.id(100868741981961050)
+,p_query_column_id=>8
+,p_column_alias=>'DEPTNO'
+,p_column_display_sequence=>80
+,p_column_heading=>'Deptno'
+,p_use_as_row_header=>'N'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+);
+wwv_flow_api.component_end;
+end;
+/
